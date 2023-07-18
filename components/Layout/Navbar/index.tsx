@@ -15,27 +15,19 @@ export const Navbar: FC = () => {
 
 	const links = [
 		{
-			name: "Anasayfa",
+			name: "Home",
 			href: "/",
 		},
 		{
-			name: "Dökümanlar",
-			href: "/docs",
-		},
-		{
-			name: "Öneri/hata Bildiri",
+			name: "Suggestions",
 			href: "/proposal-error",
 		},
 		{
-			name: "SSS",
-			href: "/faq",
-		},
-		{
-			name: "Yardım/Destek",
+			name: "Support",
 			href: "/discord",
 		},
 		{
-			name: "İletişim",
+			name: "Contact",
 			href: "/#contact",
 		},
 	];
