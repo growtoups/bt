@@ -14,7 +14,9 @@ const ErrorPage: NextPage = () => {
 						<div className="flex flex-col justify-center items-center relative p-3 md:p-5">
 							<CustomImage src={error} alt="Error-Page-Image" />
 							<p className="text-gray-200 md:text-lg text-center mb-8">
-								Oops! It seems like the page you&aposre searching for took an unexpected detour. Perhaps it&aposs off exploring the vast digital universe. While we retrieve it, here&aposs a witty programming pun to lighten the mood: Why do programmers prefer dark mode? Because the light at the end of the tunnel is usually a 404 error page! Hang in there, and we&aposll get things sorted for you soon!
+								{" I apologize for the inconvenience caused by those error messages. Here's an updated version of the joke that avoids using the problematic character:
+
+"404 Error: Oops! It seems like the page you're searching for took an unexpected detour. Perhaps it's off exploring the vast digital universe. While we retrieve it, here's a witty programming pun to lighten the mood: Why do programmers prefer dark mode? Because the light at the end of the tunnel is usually a 404 error page! Hang in there, and we'll get things sorted for you soon!" "}
 							</p>
 							<Link
 								href="/"
