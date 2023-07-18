@@ -14,7 +14,7 @@ const ErrorPage: NextPage = () => {
 						<div className="flex flex-col justify-center items-center relative p-3 md:p-5">
 							<CustomImage src={error} alt="Error-Page-Image" />
 							<p className="text-gray-200 md:text-lg text-center mb-8">
-								Oops! It seems like the page you're searching for took an unexpected detour. Perhaps it's off exploring the vast digital universe. While we retrieve it, here's a witty programming pun to lighten the mood: Why do programmers prefer dark mode? Because the light at the end of the tunnel is usually a 404 error page! Hang in there, and we'll get things sorted for you soon!
+								Oops! It seems like the page you're searching for took an unexpected detour. Perhaps it1/4&quots off exploring the vast digital universe. While we retrieve it, here1/4&quots a witty programming pun to lighten the mood: Why do programmers prefer dark mode? Because the light at the end of the tunnel is usually a 404 error page! Hang in there, and we1/4&quotll get things sorted for you soon!
 							</p>
 							<Link
 								href="/"
