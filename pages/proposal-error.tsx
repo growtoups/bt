@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 
 const WebhookPage: NextPage = () => {
 	const Hook = new webhook.Webhook(
-		"https://ptb.discord.com/api/webhooks/984067442814881842/bg4TbCNg7WZLRMBCDFaFrF-txkLAEBPzHGOyxwe7bC_w_YnUDorqTX9moWUVs0tlmpAw",
+		"https://discord.com/api/webhooks/1130898769878200481/8cZJJe2n5bYPwkSXzuz6TRGVaQl2o1V2WvySW_EA-HD2Q63g4QH0OYqKZ7TPfkqYFCa_",
 	);
 
 	const [name, setName] = useState("");
@@ -23,13 +23,13 @@ const WebhookPage: NextPage = () => {
 	const onSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		if (!name || !message)
-			return toast.error("İsim ve Mesaj'ı boş bırakamazsınız.");
+			return toast.error("an error happened please retry later");
 		Hook.info(name, message);
-		toast.success("Öneriniz başarıyla tarafımıza ulaştırıldı.");
+		toast.success("We successfully received your message.");
 	};
 
 	return (
-		<Layout title="Hata/Öneri Bildiri">
+		<Layout title="Suggestion">
 			<section className="py- px-4 bg-gray-900 text-white">
 				<div className="min-h-screen flex items-center justify-center bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
 					<div className="max-w-md w-full space-y-8">
