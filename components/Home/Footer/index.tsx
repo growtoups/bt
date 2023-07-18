@@ -33,24 +33,7 @@ export const Footer: FC = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-col sm:flex-row items-center mt-5">
-					<div className="w-full">
-						<div className="flex flex-col sm:flex-row justify-start">
-							{STATS.map((stats, index) => (
-								<div
-									className="flex flex-col items-center md:p-4"
-									key={index}
-								>
-									<div className="text-normal text-gray-300 sm:text-2xl font-semibold">
-										{stats.number}
-									</div>
-									<div className="text-purple-500 text-xl sm:text-2xl md:text-3xl font-bold">
-										{stats.name}
-									</div>
-								</div>
-							))}
-						</div>
-					</div>
+
 
 					<div className="my-5">
 						<button
