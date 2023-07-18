@@ -12,7 +12,7 @@ export const Hero: FC = () => {
 			<div className="container px-6 py-16 mx-auto text-center">
 				<div className="max-w-lg mx-auto">
 					<h1 className="text-3xl font-bold text-white md:text-4xl">
-						Dude Perfect Bot: Unleash Discord Awesomeness!
+						Dude Perfect: Unleash Discord Awesomeness!
 					</h1>
 
 					<div className="mt-8">
