@@ -3,7 +3,7 @@ import { Layout } from "@components/Layout";
 import { CustomImage } from "@components/Utils/CustomImage";
 import { Link } from "@components/Utils/Link";
 
-import error from "@assets/404svg.svg";
+import error from "@assets/404png.png";
 
 const ErrorPage: NextPage = () => {
 	return (
