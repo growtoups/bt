@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { Link } from "@components/Utils/Link";
 import { CONFIG } from "@libs/config";
-import { Aboutme } from "@components/Home/About/Aboutme";
+
 import { FiShield } from "react-icons/fi";
 import { FaSignal, FaMusic } from "react-icons/fa";
 import { HiSupport } from "react-icons/hi";
@@ -71,7 +71,6 @@ export const About: FC = () => {
 				</div>
 			</div>
 
-			<Aboutme />
 		</section>
 	);
 };
