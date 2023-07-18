@@ -3,7 +3,7 @@ import { Link } from "@components/Utils/Link";
 import { CONFIG } from "@libs/config";
 import { Aboutme } from "@components/Home/About/Aboutme";
 
-import { FaSignal, FaMusic } from "react-icons/fa";
+import { FaSignal, FaMusic, FaShield } from "react-icons/fa";
 import { HiSupport } from "react-icons/hi";
 import {
 	AiOutlineDoubleRight,
@@ -15,33 +15,23 @@ import { BsFillFileBarGraphFill } from "react-icons/bs";
 export const About: FC = () => {
 	const about = [
 		{
-			title: "Destek Sistemi",
-			desc: "EnderBot'un en gelişmiş sistemlerinden biri olan destek sisteminde, kullanıcı ekleyip çıkartma, yetkili ayarlama (rol ile), buton ile destek açılmasını sağlama, özelleştirilmiş mesajlar gibi bir çok özellik vardır.",
-			link: "/docs/systems/support",
+			title: "Music System",
+			desc: "Prepare for an immersive musical journey like no other with Dude Perfect exceptional music system. Our carefully curated selection of features brings the power of music to your fingertips, creating an unparalleled audio experience. Enjoy seamless integration with popular music streaming platforms, allowing you to easily discover and play your favorite tracks. With crystal-clear sound quality and customizable playlists, you have the tools to create the perfect ambiance for any occasion. Elevate your Discord server with the rhythmic beats and melodic tunes offered by Dude Perfect stellar music system. Get ready to turn up the volume and let the music take center stage!",
 			icon: FaMusic,
 		},
 		{
-			title: "Seviye Sistemi",
-			desc: "EnderBot'un en iyi sistemlerinden biri olan seviye sisteminde, seviye yasaklı kanal ekleme/çıkarma (ayarlanan kanalda seviye vermez), seviye-log ayarlama, seviye bonus ekleyip silme, seviye rol ayarlama, kullanıcılar arası seviye verme, seviye-xp ayarlama gibi bir çok özellik vardır.",
-			link: "/docs/systems/level",
-			icon: BsFillFileBarGraphFill,
-		},
-		{
-			title: "Davet Sistemi",
-			desc: "EnderBot'ta gelişmiş bir diğer sistem ise davet sistemidir. Davet bonus ekleme/silme, davet-log ayarlama, davet-rol ayarlama, top-davet gibi bir çok sistem vardır. EnderBot'u diğer botlardan ayıran şeylerden biri daha ise davet sistemini kendine ait modül ile çalıştırmaktadır. (Invite-Module adıyla geçmektedir)",
-			link: "/docs/systems/invite",
-			icon: AiOutlineUserAdd,
+			title: "Automoderation",
+			desc: "Maintaining a healthy and harmonious Discord community is effortless with Dude Perfect robust auto moderation system. Our advanced technology works tirelessly behind the scenes to ensure a safe and enjoyable environment for all users. From detecting excessive mentions and role mentions to monitoring message length and enforcing anti-scam measures, our auto moderation system keeps unwanted content at bay. With precise detection and prompt action, you can trust Dude Perfect to swiftly handle potential rule violations and maintain order within your server. Experience the peace of mind that comes with effective moderation as Dude Perfect empowers you to focus on what matters most—fostering a vibrant and welcoming community. Join countless satisfied users who have witnessed the seamless and efficient auto moderation capabilities of Dude Perfect.",
+			icon: FaShield,
 		},
 		{
 			title: "Uptime",
 			desc: "At Dude Perfect, we understand the importance of a reliable Discord bot that is available whenever you need it. That's why we take great pride in offering an exceptional uptime track record. Our robust infrastructure and dedicated team work tirelessly to ensure uninterrupted service, allowing you to enjoy the full potential of Dude Perfect without any interruptions. Count on us to deliver consistent performance, empowering your Discord community with top-notch features and reliability. Join the thousands of users who trust Dude Perfect for a seamless and reliable experience.",
-			link: "/docs/about-enderbot",
 			icon: AiOutlineClockCircle,
 		},
 		{
 			title: "Low ping",
 			desc: "At Dude Perfect, we prioritize speed and efficiency to provide you with a seamless Discord bot experience. With our optimized infrastructure and cutting-edge technology, Dude Perfect delivers lightning-fast response times, ensuring minimal latency. Whether you're executing commands or exploring its features, you can expect swift and precise performance. We understand the value of real-time interactions, and our commitment to low latency ensures that your Discord community stays responsive. Join the league of satisfied users who enjoy the snappy and efficient performance of Dude Perfect.",
-			link: "/docs/abot-enderbot",
 			icon: FaSignal,
 		},
 	];
@@ -58,10 +48,7 @@ export const About: FC = () => {
 				</h1>
 
 				<p className="mt-4 xl:mt-6 text-xl text-gray-300">
-					Eşsiz davet ve seviye sistemleri, kolay ve anlaşılabilir
-					arayüzler.
-					<br />
-					Gibi bir çok şey için terciniz olabilir.
+					{"Dude Perfect is the ultimate addition to your Discord server, bringing a world of excitement and functionality right at your fingertips. With a wide range of features, including moderation tools, music, games, and more, this bot takes your server experience to a whole new level."}
 				</p>
 
 				<div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
@@ -78,15 +65,6 @@ export const About: FC = () => {
 
 								<p className="text-gray-300">{info.desc}</p>
 
-								<Link
-									href={info.link}
-									className="inline-flex items-center -mx-1 text-sm apitalize transition-colors duration-200 transform text-pink-400 hover:text-pink-500"
-								>
-									<span className="mx-1">
-										Yardım ve Bilgi
-									</span>
-									<AiOutlineDoubleRight className="w-4 h-4" />
-								</Link>
 							</div>
 						);
 					})}
