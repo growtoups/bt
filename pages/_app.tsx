@@ -82,22 +82,14 @@ const App = ({ Component, pageProps }) => {
 					strategy="afterInteractive"
 					src={`https://www.googletagmanager.com/gtag/js?id=${CONFIG.GA_TRACKING_ID}`}
 				/>
-				<Script
-					id="gtag-init"
-					strategy="afterInteractive"
-					dangerouslySetInnerHTML={{
-						__html: `
-							window.dataLayer = window.dataLayer || [];
-							function gtag() {
-								dataLayer.push(arguments);
-							}
-							gtag("js", new Date());
-							gtag("config", "${CONFIG.GA_TRACKING_ID}", {
-								page_path: window.location.pathname,
-							});
-						`,
-					}}
-				/>
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-FNEX8XSSYL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FNEX8XSSYL');
+</script>
 				<Script src="https://cdn.polyfill.io/v3/polyfill.min.js" />
 				<Script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js" />
 				<NextProgress color={CONFIG.SEO.themeColor} />
