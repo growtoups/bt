@@ -1,13 +1,12 @@
 import { NextPage } from "next";
-import { Hero, About, Footer } from "@components/Home";
+import { Hero, About } from "@components/Home";
 import { Layout } from "@components/Layout";
 
 const HomePage: NextPage = () => {
 	return (
-		<Layout title="Dude-Perfect">
+		<Layout title="Home">
 			<Hero />
 			<About />
-			<Footer />
 		</Layout>
 	);
 };
