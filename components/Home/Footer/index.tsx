@@ -8,20 +8,6 @@ export const Footer: FC = () => {
 		window.open("/invite", "name", "width=400,height=800");
 	};
 
-	const STATS = [
-		{
-			name: "Sunucu",
-			number: "+15",
-		},
-		{
-			name: "Kullanıcı",
-			number: "+2k",
-		},
-		{
-			name: "Komut",
-			number: "+100",
-		},
-	];
 
 	return (
 		<section id="contact" className="bg-gray-900">
@@ -73,7 +59,7 @@ export const Footer: FC = () => {
 						>
 							<FaDiscord className="text-2xl" />
 							<span className="text-xl ml-3">
-								Discord&apos;a Ekle
+								Invite it!
 							</span>
 						</button>
 					</div>
