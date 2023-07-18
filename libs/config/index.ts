@@ -27,7 +27,7 @@ export const OTHER = {
 };
 
 export const CONFIG = {
-	GA_TRACKING_ID: "G-B4FKG82G5X",
+	GA_TRACKING_ID: "G-FNEX8XSSYL",
 	SEO,
 	CONTACT,
 	OTHER,
