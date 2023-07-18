@@ -3,7 +3,7 @@ import { Link } from "@components/Utils/Link";
 import { CONFIG } from "@libs/config";
 import { Aboutme } from "@components/Home/About/Aboutme";
 
-import { FaSignal, faMusic } from "react-icons/fa";
+import { FaSignal, FaMusic } from "react-icons/fa";
 import { HiSupport } from "react-icons/hi";
 import {
 	AiOutlineDoubleRight,
@@ -18,7 +18,7 @@ export const About: FC = () => {
 			title: "Destek Sistemi",
 			desc: "EnderBot'un en gelişmiş sistemlerinden biri olan destek sisteminde, kullanıcı ekleyip çıkartma, yetkili ayarlama (rol ile), buton ile destek açılmasını sağlama, özelleştirilmiş mesajlar gibi bir çok özellik vardır.",
 			link: "/docs/systems/support",
-			icon: faMusic,
+			icon: FaMusic,
 		},
 		{
 			title: "Seviye Sistemi",
