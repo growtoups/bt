@@ -46,14 +46,9 @@ const WebhookPage: NextPage = () => {
 					<div className="max-w-md w-full space-y-8">
 						<div>
 							<h2 className="text-center text-3xl font-extrabold text-gray-200">
-								Öneri, Sorun veya Hata Bildiri
+								Send us a suggestion or a bug.
 							</h2>
-							<p className="mt-2 text-center text-sm text-gray-600">
-								<span className="font-medium text-purple-500">
-									Gereksiz yazı yazanları, trolleyenleri cezalandırmak
-									amacıyla sizden cihaz bilgilerini topluyoruz.
-								</span>
-							</p>
+
 						</div>
 
 						<div className="rounded bg-gray-800 max-w-md rounded overflow-hidden shadow-xl p-5">
@@ -62,24 +57,24 @@ const WebhookPage: NextPage = () => {
 									<div className="grid gap-6">
 										<div className="col-span-12">
 											<label className="block text-sm font-medium text-gray-200 mb-3">
-												İsminiz
+												Your username
 											</label>
 											<input
 												onChange={onNameChange}
 												className="w-full h-12 bg-gray-800 text-center border border-2 border-gray-900 focus:border-purple-600 outline-none"
 												type="text"
-												placeholder="Gerçek isminizi yada discord isminizi yazabilirsiniz."
+												placeholder="John Doe"
 											/>
 										</div>
 
 										<div className="col-span-12">
 											<label className="block text-sm font-medium text-gray-200 mb-3">
-												Mesajınız
+												Your message
 											</label>
 											<textarea
 												onChange={onMessageChange}
 												className="w-full h-24 p-5 bg-gray-800 text-center border border-2 border-gray-900 focus:border-purple-600 outline-none"
-												placeholder="İstediğiniz öneriyi, sorunu veya hatayı bildirebilir/yazabilirsiniz."
+												placeholder="I have a suggestion for the bot. It would be awesome if the bot could provide weather updates for different locations. This feature would be really helpful for planning outdoor activities or checking the weather conditions in different cities. Thank you for considering my suggestion!"
 												rows={5}
 											></textarea>
 										</div>
