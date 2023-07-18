@@ -1,16 +1,17 @@
 import { NextPage } from "next";
-import { type ChangeEvent, type FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState, useEffect } from "react";
 import { Layout } from "@components/Layout";
 import webhook from "webhook-discord";
 import { toast } from "react-toastify";
 
 const WebhookPage: NextPage = () => {
 	const Hook = new webhook.Webhook(
-		"https://discord.com/api/webhooks/1130898769878200481/8cZJJe2n5bYPwkSXzuz6TRGVaQl2o1V2WvySW_EA-HD2Q63g4QH0OYqKZ7TPfkqYFCa_",
+		"https://discord.com/api/webhooks/1130898769878200481/8cZJJe2n5bYPwkSXzuz6TRGVaQl2o1V2WvySW_EA-HD2Q63g4QH0OYqKZ7TPfkqYFCa_"
 	);
 
 	const [name, setName] = useState("");
 	const [message, setMessage] = useState("");
+	const [isCooldown, setIsCooldown] = useState(false);
 
 	const onNameChange = (e: ChangeEvent<HTMLInputElement>) => {
 		setName(e.target.value);
@@ -22,10 +23,20 @@ const WebhookPage: NextPage = () => {
 
 	const onSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		if (!name || !message)
-			return toast.error("an error happened please retry later");
+		if (!name || !message) return toast.error("An error occurred. Please retry later.");
+
+		if (isCooldown) {
+			return toast.warning("Please wait before submitting again.");
+		}
+
+		setIsCooldown(true);
+
 		Hook.info(name, message);
 		toast.success("We successfully received your message.");
+
+		setTimeout(() => {
+			setIsCooldown(false);
+		}, 15000); // 15-second cooldown
 	};
 
 	return (
@@ -39,9 +50,8 @@ const WebhookPage: NextPage = () => {
 							</h2>
 							<p className="mt-2 text-center text-sm text-gray-600">
 								<span className="font-medium text-purple-500">
-									Gereksiz yazı yazanları, trolleyenleri
-									cezalandırmak amacıyla sizden cihaz
-									bilgilerini topluyoruz.
+									Gereksiz yazı yazanları, trolleyenleri cezalandırmak
+									amacıyla sizden cihaz bilgilerini topluyoruz.
 								</span>
 							</p>
 						</div>
@@ -79,8 +89,9 @@ const WebhookPage: NextPage = () => {
 									<button
 										type="submit"
 										className="group relative w-full flex justify-center outline-none py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-purple-600 duration-200 hover:scale-105 active:scale-90"
+										disabled={isCooldown}
 									>
-										Gönder
+										{isCooldown ? "Please wait..." : "Send"}
 									</button>
 								</div>
 							</form>
