@@ -35,12 +35,12 @@ const App = ({ Component, pageProps }) => {
 				<meta name="HandheldFriendly" content="true" />
 				<meta
 					name="copyright"
-					content="Berkant GÜNAYDIN, gunaydinberkant13@gmail.com"
+						content="Dude Perfect"
 				/>
 				<meta name="theme-color" content={CONFIG.SEO.themeColor} />
 				<meta
 					name="author"
-					content="Berkant GÜNAYDIN, gunaydinberkant13@gmail.com"
+					content="Dude Perfect"
 				/>
 				<meta name="keywords" content={CONFIG.SEO.keywords.join(",")} />
 				<meta name="description" content={CONFIG.SEO.description} />
