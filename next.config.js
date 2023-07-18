@@ -9,34 +9,34 @@ module.exports = withPlugins([withImages], {
 	async redirects() {
 		return [
 			{
-				source: "/github",
+				source: "/1313117183871387!&*#&#&!",
 				destination: "https://github.com/SlipBey",
 				permanent: true,
 			},
 			{
-				source: "/blog",
+				source: "/nahhh!*#&!",
 				destination: "https://blog.slipyme.xyz",
 				permanent: true,
 			},
 			{
-				source: "/instagram",
+				source: "/dadwkldlkwklwdawldawdkalwjkeeiawejiakdaj!",
 				destination: "https://www.instagram.com/SlipBey",
 				permanent: true,
 			},
 			{
-				source: "/youtube",
+				source: "/dwdjkawdjkawkjdkwlajdkwlljawdljkwjlkalk18318!",
 				destination: "https://youtube.com/c/AngelCraftNW",
 				permanent: true,
 			},
 			{
 				source: "/invite",
 				destination:
-					"https://discord.com/oauth2/authorize?client_id=952999874872352769&permissions=8&scope=bot",
+					"https://discord.com/api/oauth2/authorize?client_id=768724682483433482&permissions=1633160654679&scope=bot%20applications.commands",
 				permanent: true,
 			},
 			{
 				source: "/discord",
-				destination: "https://discord.gg/v9nrH5Nk7x",
+				destination: "https://discord.gg/sutyc2R5PN",
 				permanent: true,
 			},
 		];
