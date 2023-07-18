@@ -19,7 +19,7 @@ export const Navbar: FC = () => {
 			href: "/",
 		},
 		{
-			name: "Suggestions",
+			name: "Suggestions/Bugs",
 			href: "/proposal-error",
 		},
 		{
