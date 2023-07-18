@@ -50,7 +50,7 @@ export const About: FC = () => {
 		<section className="bg-gray-900">
 			<div className="container px-6 py-10 mx-auto">
 				<h1 className="text-3xl font-semibold capitalize lg:text-4xl text-white">
-					Neden <br />{" "}
+					Who is <br />{" "}
 					<span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
 						{CONFIG.OTHER.NAME}
 					</span>{" "}
