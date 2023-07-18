@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { Link } from "@components/Utils/Link";
 import { CONFIG } from "@libs/config";
 import classnames from "classnames";
-import icon from '../../../assets/icon.png';
+import icon from '../../../assets/icon.svg';
 import { FiArrowUp, FiMenu, FiX } from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa";
 
