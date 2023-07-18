@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { Link } from "@components/Utils/Link";
 import { CONFIG } from "@libs/config";
 import classnames from "classnames";
-
+import icon from '@assets/icon.png';
 import { FiArrowUp, FiMenu, FiX } from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa";
 
@@ -63,7 +63,7 @@ export const Navbar: FC = () => {
 		<>
 			<nav className="relative px-6 py-6 flex justify-between items-center bg-gray-900">
 				<div className="flex items-center justify-between">
-					<div>
+					<div> <img  src={icon}  alt="Logo"/>
 						<span className="text-2xl font-bold lg:text-3xl text-gray-300">
 							{CONFIG.OTHER.NAME}
 						</span>
