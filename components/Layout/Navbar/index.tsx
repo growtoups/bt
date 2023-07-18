@@ -64,7 +64,7 @@ export const Navbar: FC = () => {
 			<nav className="relative px-6 py-6 flex justify-between items-center bg-gray-900">
 				<div className="flex items-center justify-between">
 					<div className="flex items-center">
-						<img src={icon.toString()} alt="Logo" className="mr-2" />
+						<img src={icon.toString()} alt="Logo" className="w-256 h-256 mr-2" />
 						<span className="text-2xl font-bold lg:text-3xl text-gray-300">
 							{CONFIG.OTHER.NAME}
 						</span>
