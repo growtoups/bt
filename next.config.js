@@ -9,22 +9,22 @@ module.exports = withPlugins([withImages], {
 	async redirects() {
 		return [
 			{
-				source: "/1313117183871387!&*#&#&!",
+				source: "/1313117183871387",
 				destination: "https://github.com/SlipBey",
 				permanent: true,
 			},
 			{
-				source: "/nahhh!*#&!",
+				source: "/nahhh",
 				destination: "https://blog.slipyme.xyz",
 				permanent: true,
 			},
 			{
-				source: "/dadwkldlkwklwdawldawdkalwjkeeiawejiakdaj!",
+				source: "/dadwkldlkwklwdawldawdkalwjkeeiawejiakdaj",
 				destination: "https://www.instagram.com/SlipBey",
 				permanent: true,
 			},
 			{
-				source: "/dwdjkawdjkawkjdkwlajdkwlljawdljkwjlkalk18318!",
+				source: "/dwdjkawdjkawkjdkwlajdkwlljawdljkwjlkalk18318",
 				destination: "https://youtube.com/c/AngelCraftNW",
 				permanent: true,
 			},
