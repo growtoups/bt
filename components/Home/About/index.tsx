@@ -3,7 +3,7 @@ import { Link } from "@components/Utils/Link";
 import { CONFIG } from "@libs/config";
 import { Aboutme } from "@components/Home/About/Aboutme";
 
-import { FaSignal, FaMusic, FaShield } from "react-icons/fa";
+import { FaSignal, FaMusic, FaShieldHalved } from "react-icons/fa";
 import { HiSupport } from "react-icons/hi";
 import {
 	AiOutlineDoubleRight,
@@ -22,7 +22,7 @@ export const About: FC = () => {
 		{
 			title: "Automoderation",
 			desc: "Maintaining a healthy and harmonious Discord community is effortless with Dude Perfect robust auto moderation system. Our advanced technology works tirelessly behind the scenes to ensure a safe and enjoyable environment for all users. From detecting excessive mentions and role mentions to monitoring message length and enforcing anti-scam measures, our auto moderation system keeps unwanted content at bay. With precise detection and prompt action, you can trust Dude Perfect to swiftly handle potential rule violations and maintain order within your server. Experience the peace of mind that comes with effective moderation as Dude Perfect empowers you to focus on what matters most—fostering a vibrant and welcoming community. Join countless satisfied users who have witnessed the seamless and efficient auto moderation capabilities of Dude Perfect.",
-			icon: FaShield,
+			icon: FaShieldHalved,
 		},
 		{
 			title: "Uptime",
