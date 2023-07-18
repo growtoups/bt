@@ -92,7 +92,7 @@ export const Navbar: FC = () => {
 					onClick={invite}
 				>
 					<FaDiscord className="flex float-left text-xl" />
-					<span className="flex float-right ml-2">Ekle</span>
+					<span className="flex float-right ml-2">Invite it.</span>
 				</button>
 				<div className="lg:hidden">
 					<button
