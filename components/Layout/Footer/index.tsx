@@ -9,12 +9,12 @@ export const Footer: FC = () => {
 
 	const Pages = [
 		{
-			name: "Gizlilik Politikası",
-			href: "/privacy",
+			name: "Privacy Policy",
+			href: "/tos&pp/pp",
 		},
 		{
-			name: "Hizmet Şartları",
-			href: "/tos",
+			name: "Terms of Services",
+			href: "/tos&pp/tos",
 		},
 	];
 
@@ -51,31 +51,7 @@ export const Footer: FC = () => {
 				<div className="sm:flex sm:items-center sm:justify-between">
 					<span className="text-sm sm:text-center text-gray-200">
 						&copy; {new Date().getFullYear()} All rights reserved.
-						Made with <FiHeart className="text-red-500 inline" /> by{" "}
-						<Link
-							underline
-							href="https://slip.slipyme.com"
-							className="text-blue-600"
-						>
-							SlipBey
-						</Link>{" "}
-						using{" "}
-						<Link
-							underline
-							href="https://nextjs.org/"
-							className="text-gray-600"
-						>
-							NextJS
-						</Link>{" "}
-						and{" "}
-						<Link
-							underline
-							href="https://tailwindcss.com/"
-							className="text-green-400"
-						>
-							TailwindCSS
-						</Link>
-						.
+						
 					</span>
 					<div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
 						{CONFIG.CONTACT.map((social, idx) => (
