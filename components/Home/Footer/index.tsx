@@ -47,7 +47,7 @@ export const Footer: FC = () => {
 						</button>
 					</div>
 				</div>
-			</div>
+			
 		</section>
 	);
 };
