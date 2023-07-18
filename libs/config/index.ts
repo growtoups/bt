@@ -1,29 +1,29 @@
 import { CONTACT } from "@libs/config/contact";
 
 const SEO = {
-	layoutTitle: "%s - EnderBot",
-	title: "EnderBot",
-	publishDomain: "https://enderrise.net",
+	layoutTitle: "%s - Dude-Perfect",
+	title: "Dude-Perfect",
+	publishDomain: "https://dude-perfect.com",
 	themeColor: "#6D28D9",
 	keywords: [
-		"slipyme",
-		"ender",
-		"enderbot",
-		"enderrise",
+		"dude-perfect",
+		"dude",
+		"dude perfect",
+		"perfect",
 		"discord",
 		"bot",
 		"discord-bot",
-		"blog",
+		"music",
 		"react",
 		"next",
 		"reactjs",
 		"nextjs",
 	],
-	description: "Discord'un yenilikçi çok amaçlı botlarından biri olan EnderBot'u biraz tanıyalım.",
+	description: "Dude Perfect: The Ultimate Discord Bot Experience! 😎",
 };
 
 export const OTHER = {
-	NAME: "EnderBot",
+	NAME: "Dude Perfect",
 };
 
 export const CONFIG = {
