@@ -14,13 +14,13 @@ const ErrorPage: NextPage = () => {
 						<div className="flex flex-col justify-center items-center relative p-3 md:p-5">
 							<CustomImage src={error} alt="Error-Page-Image" />
 							<p className="text-gray-200 md:text-lg text-center mb-8">
-								Aradağınız sayfa tozla duman olmuş vah vah..
+								Sorry, but the page you're looking for seems to have gone on vacation. It's probably sipping margaritas on a sunny beach somewhere. We apologize for the inconvenience and hope you find what you're looking for soon. In the meantime, why not enjoy some virtual sunshine here?
 							</p>
 							<Link
 								href="/"
 								className="inline-block bg-purple-500 hover:bg-purple-600 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-200 px-8 py-3"
 							>
-								Evine Koş
+								Go back.
 							</Link>
 						</div>
 					</div>
