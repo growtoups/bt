@@ -3,7 +3,7 @@ import { Link } from "@components/Utils/Link";
 import { CONFIG } from "@libs/config";
 import { Aboutme } from "@components/Home/About/Aboutme";
 
-import { FaSignal } from "react-icons/fa";
+import { FaSignal, faMusic } from "react-icons/fa";
 import { HiSupport } from "react-icons/hi";
 import {
 	AiOutlineDoubleRight,
@@ -18,7 +18,7 @@ export const About: FC = () => {
 			title: "Destek Sistemi",
 			desc: "EnderBot'un en gelişmiş sistemlerinden biri olan destek sisteminde, kullanıcı ekleyip çıkartma, yetkili ayarlama (rol ile), buton ile destek açılmasını sağlama, özelleştirilmiş mesajlar gibi bir çok özellik vardır.",
 			link: "/docs/systems/support",
-			icon: HiSupport,
+			icon: faMusic,
 		},
 		{
 			title: "Seviye Sistemi",
@@ -33,14 +33,14 @@ export const About: FC = () => {
 			icon: AiOutlineUserAdd,
 		},
 		{
-			title: "Aktiflik",
-			desc: "EnderBot kendine özel bir makinede barınmaktadır. Bu makinede devamlı kontrollerden geçirilip her türlü ihtimale karşı önlemler anlınmaktadır. Bu yüzden dolayı %97.8 oranında aktiftir.",
+			title: "Uptime",
+			desc: "At Dude Perfect, we understand the importance of a reliable Discord bot that is available whenever you need it. That's why we take great pride in offering an exceptional uptime track record. Our robust infrastructure and dedicated team work tirelessly to ensure uninterrupted service, allowing you to enjoy the full potential of Dude Perfect without any interruptions. Count on us to deliver consistent performance, empowering your Discord community with top-notch features and reliability. Join the thousands of users who trust Dude Perfect for a seamless and reliable experience.",
 			link: "/docs/about-enderbot",
 			icon: AiOutlineClockCircle,
 		},
 		{
-			title: "Düşük Ping",
-			desc: "Kendine özel makinede durmasının bir diğer avantajı ise fiber internete bağlı olmasıdır. Bu hem geliştiricisi açısından hem de kullanıcıları açısından gayet önemli ve iyi bir sebeptir.",
+			title: "Low ping",
+			desc: "At Dude Perfect, we prioritize speed and efficiency to provide you with a seamless Discord bot experience. With our optimized infrastructure and cutting-edge technology, Dude Perfect delivers lightning-fast response times, ensuring minimal latency. Whether you're executing commands or exploring its features, you can expect swift and precise performance. We understand the value of real-time interactions, and our commitment to low latency ensures that your Discord community stays responsive. Join the league of satisfied users who enjoy the snappy and efficient performance of Dude Perfect.",
 			link: "/docs/abot-enderbot",
 			icon: FaSignal,
 		},
