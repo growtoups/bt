@@ -17,7 +17,7 @@ export const Footer: FC = () => {
 			href: "/tos&pp/tos",
 		},
 		{
-			name: "Mycelium",
+			name: "🍄 Mycelium",
 			href: "https://discord.com/api/oauth2/authorize?client_id=1130633345936670840&permissions=412317173824&scope=bot%20applications.commands",
 		},
 	];
